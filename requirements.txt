@@ -1,0 +1,6 @@
+python=3.8.6
+flask
+scikit-learn
+gunicorn
+pillow
+numpy

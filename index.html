@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Prediksi Jenis Bunga Iris</title>
+
+    <!-- Icons font CSS-->
+	<link rel="stylesheet" href = "{{ url_for('static', filename='vendor/mdi-font/css/material-design-iconic-font.min.css') }}">
+	<link rel="stylesheet" href = "{{ url_for('static', filename='vendor/font-awesome-4.7/css/font-awesome.min.css') }}">
+    
+	
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+	<link rel="stylesheet" href = "{{ url_for('static', filename='vendor/select2/select2.min.css') }}">
+	<link rel="stylesheet" href = "{{ url_for('static', filename='vendor/datepicker/daterangepicker.css') }}">
+	
+
+    <!-- Main CSS-->
+	<link rel="stylesheet" href = "{{ url_for('static', filename='css/main.css') }}">
+	
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title"><center>Prediksi Bunga Iris</center></h2>
+                    <form class="cmxform" id="commentForm"  method="POST">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Sepal Length</label>
+                                    <input class="input--style-4" type="text" name="SepalLength" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Sepal Width</label>
+                                    <input class="input--style-4" type="text" name="SepalWidth" required>
+                                </div>
+                            </div>
+                        </div>
+						
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Petal Length</label>
+                                    <input class="input--style-4" type="text" name="PetalLength" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Petal Width</label>
+                                    <input class="input--style-4" type="text" name="PetalWidth" required>
+                                </div>
+                            </div>
+                        </div>
+											
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>		
+				
+				<div class="card-body">
+					<h2 class="title"><center>Prediksi:{{ text }}</center></h2>
+                    <div class="row row-space">
+                        <div class="col-2">
+                            <div class="input-group">
+                                <label class="label">Sepal Length</label>
+							{{SepalLength}}
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="input-group">
+                                <label class="label">Sepal Width</label>
+                                {{SepalWidth}}
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				
+				<div class="card-body">
+                    <div class="row row-space">
+                        <div class="col-2">
+                            <div class="input-group">
+                                <label class="label">Petal Length</label>
+							{{PetalLength}}
+                            </div>
+							
+                        </div>
+                        <div class="col-2">
+                            <div class="input-group">
+                                <label class="label">Petal Width</label>
+                                {{PetalWidth}}
+                            </div>
+                        </div>
+                    </div>
+				</div>
+	
+            </div>
+        </div>
+    </div>
+	
+	
+	
+	
+    
+	<!-- Jquery JS-->
+	<script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+	
+    <!-- Vendor JS-->
+	<script src="{{ url_for('static', filename='vendor/select2/select2.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/datepicker/moment.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/datepicker/daterangepicker.js') }}"></script>
+  
+
+    <!-- Main JS-->
+	<script src="{{ url_for('static', filename='js/global.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.validate.min.js') }}"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
